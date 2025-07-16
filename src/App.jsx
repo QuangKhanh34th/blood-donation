@@ -13,7 +13,7 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY} libraries={["places"]}>
+        <LoadScript googleMapsApiKey={import.meta.env.GOOGLE_MAPS_API} libraries={["places"]}>
           <RouterProvider router={router} />
         </LoadScript>
       </PersistGate>
